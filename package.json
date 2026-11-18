@@ -1,0 +1,17 @@
+{
+  "name": "zoom-project",
+  "version": "1.0.0",
+  "description": "Full-stack Zoom clone web application",
+  "scripts": {
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install",
+    "install-all": "npm run install:backend && npm run install:frontend",
+    "start:backend": "npm --prefix backend run dev",
+    "start:frontend": "npm --prefix frontend start",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "build:frontend": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
